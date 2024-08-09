@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Style</title>
+    <!-- bikin CSS scr internal -->
+    <!-- kelebihan internal dan inline, diapply/dieksekusi lebih dulu -->
+    <style>
+        h2{
+            color: blue;
+        }
+        p{
+            color: red;
+        }
+        .mobil{
+            color: green;
+        }
+        #alya{
+            color: purple;
+        }
+    </style>
+    <!-- bikin CSS scr eksternal -->
+    <!-- kemudahan eksternal, style CSS reusable di masing masing file html,
+    pengen nge-style banyak html page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- bikin CSS scr inline -->
+    <!-- <h1 style="color: red;"> Hello World!</h1> -->
+    
+    <!-- hirarki select di css, id > class > tag -->
+    <h2>hai</h2>
+    <p>helo</p>
+    <p class="mobil" id="avanza">avanza</p> <!-- select class di css, kasih titik di awalan -->
+    <p class="mobil" id="alya">alya</p> <!-- select id di css, kasih # di awalan -->
+</body>
+</html>

@@ -1,9 +1,129 @@
 <!DOCTYPE html> <!-- terbaca sebagai html 5 -->
 <html> <!-- inisiasi web -->
-    <head> <!-- set judul, bikin meta (buat search engine) -->
+    <head> <!-- set judul, bikin meta (buat search engine), ngasih info kodenya pake bahasa apa
+        info tentang encoding (UTF-8)-->
         <title>Test</title> <!-- buat judul di tab -->
+        <!-- nambahin style CSS scr internal, bikin tag style -->
+        <style> 
+            table, th, td{
+                border: 10 px;
+                color: black;
+            }
+        </style>
+        <!-- bikin CSS scr eksternal, bikin file baru -->
+        
     </head>
-    <body> <!-- buat nampilin konten di web -->
-        <h1>Hello World Guys!</h1> <!-- buat header/judul dengan ukuran lbh besar -->
+    <body> <!-- buat nampilin konten di web, nampilin kompinen yg ditampilin ke browser -->
+        <!-- nambahin CSS scr inline -->
+        <h1 style="color: blue;">Hello World Guys!</h1> <!-- buat header/judul dengan ukuran lbh besar,
+        scr default nampilin tulisan lbh tebal dan gede dari teks biasa -->
+        <!-- aturan heading: tiap web page harus ada min 1 heading h1,
+        harus berurutan/hirarki dan boleh lompat (h1 ke h3 atau h3 ke h6),
+        kalo mau buat teks tebel doang jangan pake tag heading pake styling aja karena heading punya makna semantik yg berbeda -->
+        <p>paragraf 1</p> 
+        <p>paragraf 2</p>
+
+        <hr> <!-- horizontal row, bikin garis horizontal -->
+        baris 1
+        <br> <!-- break, biar bikin posisi teksnya di bawah -->
+        baris 2
+
+        <!-- bikin komentar buat pesan utk developer biar kodenya bisa dimengerti -->
+
+        <!-- teks formatting -->
+        <hr>
+        <p><b>teks bold</b></p> <!-- gunakan utk menekankan teks yg penting -->
+        <p><i>teks italic</i></p> <!-- gunakan utk istilah yg asing dlm suatu teks -->
+        <p>teks <sub>subscript</sub> dan <sup>superscript</sup></p>
+
+        <!-- unordered list -->
+        <ul type="square">
+            <li>apel</li>
+            <li>mangga</li>
+            <li>pisang</li>
+            <li>jambu</li>
+        </ul>
+
+        <!-- ordered list -->
+        <ol type="A">
+            <li>apel</li>
+            <li>mangga</li>
+            <li>pisang</li>
+            <ol type="a">
+                <li>pisang ambon</li>
+                <li>pisang raja</li>
+            </ol>
+            <li>jambu</li>
+        </ol>
+
+        <!-- bikin tabel, scr default bordernya transparan -->
+        <table> <!-- sebagai parent element -->
+            <tr> <!-- table row -->
+                <th>company</th> <!-- table header -->
+                <th>contact</th>
+                <th>country</th>
+            </tr>
+            <tr> <!-- baris kedua -->
+                <td>alfreds</td> <!-- table division -->
+                <td>maria</td>
+                <td>germany</td>
+            </tr>
+            <tr> <!-- baris ketiga -->
+                <td>centro</td>
+                <td>francisco</td>
+                <td>mexico</td>
+            </tr>
+        </table>
+
+        <!-- manjangin kolom -->
+        <table>
+            <tr>
+                <th>asal</th>
+                <th>domisili</th>
+            </tr>
+            <tr>
+                <td colspan="2"> <!-- manjangin sempanjang 2 kolom-->
+                    <center>jakarta</center>
+                </td>
+            </tr>
+        </table>
+
+        <!-- manjangin baris -->
+
+
+        <!-- nambahin gambar -->
+        <img src="https://en.wikipedia.org/wiki/Stephen_Strange_%28Marvel_Cinematic_Universe%29#/media/File:Benedict_Cumberbatch_as_Doctor_Strange.jpeg" alt="doctor strange">
+        <!-- fungsi alt, ngedeskripsiin gambar, dipake buat search engine,
+        screen reader biasanya utk orang yg penglihatannya kurang -->
+        <br>
+        <!-- nambahin link, pake tag a (anchor), pake target biar kalo diklik langsung pindah tab -->
+        <a href="https://disney.fandom.com/wiki/Doctor_Strange" target="_blank">coba klik deh</a>
+
+        <!-- ID link -->
+        <p>
+            <a href="#aku">cari nama aku deh</a>
+        </p>
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2 id="aku">budi</h2> <!-- kalo mau cari aku, tinggal nambahin id yg sesuai sama link di atas -->
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2>andi</h2>
+        <h2>andi</h2>
+
+        <!-- bikin form -->
+        
     </body>
 </html>
